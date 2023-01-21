@@ -9,10 +9,16 @@
         "python",
         "ultroid"
     ],
-    "repository": "https://github.com/TeamUltroid/Ultroid",
-    "website": "https://ultroid.tech",
-    "success_url": "https://t.me/TeamUltroid",
-    "stack": "container",
+    ""repository": "https://github.com/RadicalIsDavid/Ultroid",
+   "stack": "heroku-22",
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+],
     "env": {
         "API_ID": {
             "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
@@ -47,10 +53,4 @@
             "required": false
         }
     },
-    "formation": {
-        "ultroid": {
-            "quantity": 1,
-            "size": "free"
-        }
-    }
 }
